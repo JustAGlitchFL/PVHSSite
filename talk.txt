@@ -1,0 +1,10 @@
+* use this to chat when we are in the workpace together if you want *
+* add a ! to the file called PING.MD to alert others off new chats *
+
+hi
+
+Skylar,
+im removing the <br> you added to student links and i will use a search and replace instead
+
+wdym by that
+there are three classes for each "icon." one is the overall, one is the icon, one is the name

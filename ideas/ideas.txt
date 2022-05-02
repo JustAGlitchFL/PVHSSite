@@ -1,0 +1,19 @@
+Ideas for Home Page:
+parallax image (new image of school)
+navbar below image that scrolls and stays at the top
+keep side navbar using w3
+
+Light and dark mode availability (java element)
+
+Color scheme: Black Blue White Grey
+Potential Background: Aquatic (mascot is a shark)
+
+Hexadecimal:0093CF
+
+Img for paralax
+https://www.elkinsllc.com/wp-content/uploads/2016/02/ponte-vedra-hs-1.jpg
+
+https://www.wlwv.k12.or.us/Domain/15
+
+wednesday popup
+upcoming events

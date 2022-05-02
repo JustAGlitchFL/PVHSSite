@@ -1,0 +1,247 @@
+body {
+  background-image:linear-gradient(#0093cf,#006994);
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.topnav {
+  
+  background-color: black;
+  /* overflow: hidden; */
+  border-style: solid;
+  border-margin: 0;
+  border-padding: 0;
+  border-color: black;
+  padding-bottom: 10px;
+  margin: 0px 0px 0px 0px;
+  text-align: auto;
+  padding:0;
+  position:fixed;
+  top:0px;
+  width:100%;
+  display: inline;
+  box-sizing: border-box;
+  z-index: 100;
+  border-bottom:5px solid gray;
+
+}
+
+.logo {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.search {
+  float: right;
+  padding: 20px 20px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  /* float: left; */
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+
+  transition-duration: 0.5s; 
+  
+}
+
+
+/* Change the color of links on hover */
+.navbuttons a:hover {
+  background-color: white;
+  color: #0093cf;
+  transition-duration: 0.5s;
+}
+
+
+/* Button div */
+.navbuttons {
+  float: center;
+  /*border-top-style: solid;
+  border-top-color: black;
+  border-width:100%;*/
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding: 14px 30px;
+}
+
+/* .contentbox {
+  float:center;
+  border:3px solid black;
+  border-top:0px;
+  margin:auto;
+  width:90%;
+  background-color:skyblue;
+} */
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 101; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  white-space: nowrap; /* prevent text from wrapping */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+  position:relative;
+  height:250vh;
+  top:130px;
+  width:75%;
+  margin:auto;
+  margin-top:50px;
+  margin-bottom:200px;
+/*   border:solid grey 5px; */
+  border-radius: 20px;
+  background-color:white;
+
+}
+
+.maincontent {
+  width:75%;
+  margin:0px;
+  background-color:white;
+  padding-top:50px;
+  display:inline-block;
+  float:left;
+  border-radius: 20px;
+}
+
+.sidemain {
+  width:25%;
+  min-height:250vh;
+  display:inline-block;
+  float:left;
+  background-color:gray;
+  margin:0px;
+  text-align:center;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.sidemain a {
+  color:white;
+  text-decoration:none;
+}
+
+#helpfullinks {
+  
+}
+
+#helpfullinks td {
+  width:300px;
+  vertical-align:top;
+}
+
+#helpfullinks li {
+  margin:10px;
+  color:lightblue;
+}
+
+#helpfullinks a:hover {
+  color:deepskyblue;
+  text-decoration:underline;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/* Footer */
+.footer {
+  margin: 0px 0px 0px 0px;
+  background-color:black;
+  padding:20px 40px 20px 40px;
+  width:95.85%;
+  height:20vh;
+  display:block;
+
+}
+
+.footer span {
+  color:white;
+  font-size:20px;
+  margin-bottom:20px;
+}
+
+
+
+
+.contentbox {
+  margin-right:5%;
+  margin-left:5%;
+  margin-bottom:100px;
+  padding: 20px;
+  padding-bottom: 2.5rem;
+  min-width:500px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  color: white;
+  background-color: black;	 
+}
+
+span {
+  margin-left:100px;
+}
+
+
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Work Sans', sans-serif; */

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Announcements - Ponte Vedra High School</title>
+    <link href="/mainpage.css" rel="stylesheet" type="text/css" />
+    <link href="/overall.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="https://www.stjohns.k12.fl.us/cr/wp-content/uploads/sites/35/2015/02/2-300x277.png" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src = "/script.js"></script>
+
+  <style>
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2 {
+    text-align:center;
+  }
+  h2 {
+    color:ghostwhite;
+  }
+
+  #announcetitle {
+    padding:10px;
+    background-color:rgb(148, 225, 242);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 150%;
+    text-align:center;
+  }
+
+  #weeklyupdate {
+    transition-duration:1s;
+    
+    margin-right:20%;
+    margin-left:20%;
+    padding:25px;
+    
+    text-align:center;
+    font-size:1.5em;
+    background-color:rgb(222, 222, 222);
+    color:rgb(33, 33, 33);
+  }
+  #weeklyupdate:hover {
+    background-color:whitesmoke;
+    color:rgb(0, 42, 84);
+  }
+
+  #announcecontent {
+    transition-duration:1s;
+    
+    margin-right:20%;
+    margin-left:20%;
+    padding:25px;
+    
+    text-align:left;
+    
+    background-color:rgb(59, 59, 59);
+    color:rgb(146, 215, 252);
+  }
+  #announcecontent:hover {
+    background-color:rgb(30, 30, 30);
+  }
+
+  h3, h4 {
+    text-align: center;
+  }
+
+  #hs101 {
+    
+    padding:25px;
+    
+    background-color:rgb(222, 222, 222);
+    color:rgb(33, 33, 33);
+
+  }
+  #hs101border {
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-right-width:0px;
+    border-left-width:0px;
+    border-image:url(https://thumbs.dreamstime.com/b/blue-white-seamless-wave-pattern-linear-design-vector-illustration-92288990.jpg) 20 round;
+    border-style:solid;
+  }
+
+  #teacheroty {
+    transition-duration:1s;
+    
+    margin-right:20%;
+    margin-left:20%;
+    padding:25px;
+    
+    text-align:center;
+    
+    background-color:rgb(59, 59, 59);
+    color:rgb(146, 215, 252);
+  }
+  #teacheroty:hover {
+    background-color:rgb(30, 30, 30);
+  }
+
+  .teacherimg {
+    width: 25%
+  }
+
+  .parallax {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  .bookmarks {
+    transition-duration:1s;
+    
+    margin-right:20%;
+    margin-left:20%;
+    padding:25px;
+    
+    text-align:center;
+    
+    background-color:rgb(59, 59, 59);
+  }
+  .bookmarks:hover {
+    background-color:rgb(30, 30, 30);
+  }
+
+  a {
+    transition-duration:0.2s;
+    color:white;
+  }
+  a:hover {
+    color:skyblue;
+  }
+    
+  </style>
+  </head>
+  <body>
+    <div class="topnav" id = "topnav" style="white-space:nowrap;">
+       
+  <a href="/index.html"><img class="logo" src="https://www-pvhs.stjohns.k12.fl.us/wp-content/uploads/2019/11/bg_logo.png" width="220"></a>
+      <div class="navbuttons">
+      <a href="/index.html">Home</a>  
+      <a href="https://www-pvhs.stjohns.k12.fl.us/wp-content/uploads/2021/08/2021-2022-PVHS-Bell-Schedule.pdf" target = "_blank">Bell Schedule</a>
+      <a href="/subpages/links4students.html">Links for Students</a>  
+      <a href="/subpages/PVHS-announcements.html">PVHS Announcements</a>
+      <a onclick = "openNav()">More</a>
+      </div>
+     </div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://homeaccess.stjohns.k12.fl.us/HomeAccess/Account/LogOn?ReturnUrl=%2fhomeaccess" target = "_blank">Home Access<br>Center</a>
+  <a href="https://stjohnsschools.schoology.com/" target = "_blank">Schoology for<br>Students</a>
+  <a href="https://www.stjohns.k12.fl.us/calendar/" target = "_blank">St. Johns<br>Calendar</a>
+  <a href="https://www-pvhs.stjohns.k12.fl.us/media/">Media Center</a>
+  <a href="test">test</a>
+</div>
+
+    <br><br><br><br><br><br>
+    
+    <div id="announcetitle">
+     <h1><span>PVHS Announcements</span></h1>
+    </div>
+    <div class="parallax" style="background-image:url('https://pontevedrarecorder.com/uploads/original/1464188594_d7ce.jpg');">
+    <div id="bookmarks" class="bookmarks">
+      <h2>Bookmarks</h2>
+      <a href="#weekly">Weekly Update</a>
+      <a href="#announce">Registration for 2022-2023</a>
+      <a href="#hs101">High School 101</a>
+      <a href="#TOY">Teacher of the Year 2021-2022</a>
+    </div>
+    <div id="weeklyupdate">
+      <h3 id="weekly">Weekly Update</h3>
+      <!-- Here will be our weekly update, dont work on until final week -->
+    </div>
+    <div id="announcecontent">
+      <h3 id="announce"><span><center>Registration for 2022-2023</center></span></h3>
+       <h4>March 4, 2022</h4>
+      <p>Shark Families:</p>
+
+      <p>We have currently begun the process of scheduling students for the 2022- 
+      2023 Academic School Year.  There is important information regarding 
+      scheduling contained on this page.  Please review it carefully with your 
+      student.</p>
+
+      <p>We are very pleased to announce that Ponte Vedra High School has been 
+      approved to offer the AP Capstone Diploma Program for the 2022-2023 school 
+      year.  We will be offering the first course, AP Seminar, to Juniors only.  
+      The class of 2024 will be the first to have the opportunity to graduate 
+      with this distinction.  More information regarding program requirements is 
+      contained in this PDF.</p>
+
+      <p>In the 2022-2023 school year, we will be launching an Education strand to 
+      our Academy Programs for those interested in a career in teaching.  More 
+      information will be provided at various parent/student academy sessions.</p>
+
+      <p>ALL TEACHER RECOMMENDATIONS AND STUDENT COURSE REQUESTS NEED TO BE 
+      COMPLETED NO LATER THAN APRIL 1, 2022.  FURTHER COMMUNICATIONS REGARDING 
+      SCHEDULING WILL BE FORTHCOMING.</p>
+
+      <p>Below is important information regarding our scheduling process and 
+      requirements:</p>
+
+
+      <ul>
+        <li>Advanced Placement Courses are the most rigorous courses offered at               Ponte Vedra High School.  Please take great care in selecting these                 courses and the number of AP courses taken in any given year.  Our                  website has information regarding Advanced Placement course work:                   https://www-pvhs.stjohns.k12.fl.us/apinfo/</li><br>
+        <li>A Modified Schedule is requested when a student wishes to take less               than seven (7) courses.  Only seniors are permitted to request a modified           schedule provided they have met all graduation requirements (to include             courses currently requested).  Students must request a modified schedule            through the guidance department no later than May 27, 2022.  Request                forms available in guidance for a Modified Schedule will NOT be accepted            after this date.</li><br>
+        <li>A Blended Schedule is requested when a student wishes to take a mix               of on campus courses and courses taken virtually through SJVS or FLVS.              This option is open to all students.  Students are NOT permitted to take            more than three (3) courses virtually.  Students must still be registered           for seven courses, unless a senior who will meet all graduation           
+          requirements.  Students are to take at least one course virtually to 
+          satisfy graduation requirements.</li><br>
+        <li>Our intention is to release student preliminary schedules twice this 
+          summer, once in late June/early July and again one week prior to the 
+          start of school.  This effort is to address any issues prior to the start 
+          of school August 10, 2022 when students will receive their final 
+          schedule.  Once students preliminary schedules are released in July, we 
+          will not accept requests for reasons of teacher change, period change, or 
+          changing electives.  Schedule changes will only be accepted for duplicate 
+          courses, missing courses, and/or a course level change.</li><br>
+          <li>It is important to review the 2022-2023 Pupil Progression Plan for 
+          High Schools as well as our course catalogue.  We will inform parents 
+          when these documents are available on our website.</li><br>
+      </ul>
+
+      <p>We take great pride in our efforts to create a master schedule that 
+          meets the needs of all our students.  Please take the time to review your 
+          student’s course requests and contact our guidance department if there 
+          are any questions or concerns.  Thank you.</p>
+
+      <p>PVHS Administration</p>
+    </div>
+    </div>
+    
+    <div class="parallax" style="background-color:rgb(222,222,222);">
+    <div id="hs101border">
+    <div id="hs101">
+      <h3><span><center>High School 101</center></span></h3>
+      <h4>February 15, 2022</h4>
+      <p>8th grade Parents/Guardians of students zoned for Ponte Vedra High School         for the 2022-2023 school year were invited to High School 101 Night on              Tuesday, February 15, 2022.</p>
+
+      <p>High School 101 was an in-depth presentation of what to expect at PVHS for       the upcoming school year and how students will register and select their            classes. Students and Parents were also presented with the AP course                offerings, electives, and Academies at PVHS.</p>
+
+      <p>If you were unable to attend, there is more information available here.</p>
+
+      
+    </div>
+    </div>
+
+    <div class="parallax" style="background-image:url('https://pontevedrarecorder.com/uploads/original/20180530-145424-Students%20throw%20their%20caps%20in%20the%20air%20to%20celebrate%20graduating%20from%20Ponte%20Vedra%20High%20School..JPG');">
+    <div id="teacheroty">
+      <h3 id="TOY"><span><center>PVHS 2021-2022 Teachers of the Year</center></span></h3>
+      <h4>October 15, 2021</h4>
+      <p>We would like to take this opportunity to recognize..... drum roll please....</p><br>
+      <h4>Linda Green <br> 2021-2022 Teacher of the Year</h4>
+      <center><img src="https://www-pvhs.stjohns.k12.fl.us/wp-content/uploads/2021/10/GCWL9700-146x300.jpeg" class="teacherimg"></center>
+      <br><br>
+      <h4>Daniel Lezcano <br> 2021-2022 Rookie Teacher of the Year</h4>
+      <center><img src="https://www-pvhs.stjohns.k12.fl.us/wp-content/uploads/2021/10/VKVX5535-138x300.jpeg" class="teacherimg"></center>
+    </div>
+    </div>
+  </div>
+
+  <div class = "footer">
+      <table>
+        <tr>
+          <td>
+            <img src = "https://www-pvhs.stjohns.k12.fl.us/wp-content/uploads/2019/11/pv.png" width = "150px" height = "150px">
+          </td>
+        <td>
+          <span style = "font-size:1.5em;">Ponte Vedra High School</span><br><br>
+          <span style = "font-size:.8em;">460 Davis Park Road</span><br>
+          <span style = "font-size:.8em;">Ponte Vedra, FL 32081</span><br>
+          <span style = "font-size:.8em;">Main: (904) 547-7350</span><br>
+          <span style = "font-size:.8em;">Fax: (904) 547 7355</span><br>
+          <a href="https://goo.gl/maps/XTZNZuMXqhJCiwR97" style="padding-left:100px;">View Map</a>
+        </td>
+      </tr>
+      </table>
+      
+    </div>
+  </body>
+</html>
