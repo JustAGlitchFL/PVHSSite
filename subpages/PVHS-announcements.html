@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -115,6 +115,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  /*filter: blur(3px);*/
+
   }
 
   .bookmarks {
@@ -139,7 +142,33 @@
   a:hover {
     color:skyblue;
   }
-    
+
+  #apannouncement li {
+    text-align:left;
+    margin-bottom:5px;
+  }
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  }
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+
+  .desc {
+  padding: 15px;
+  text-align: center;
+  }
   </style>
   </head>
   <body>
@@ -160,8 +189,8 @@
   <a href="https://homeaccess.stjohns.k12.fl.us/HomeAccess/Account/LogOn?ReturnUrl=%2fhomeaccess" target = "_blank">Home Access<br>Center</a>
   <a href="https://stjohnsschools.schoology.com/" target = "_blank">Schoology for<br>Students</a>
   <a href="https://www.stjohns.k12.fl.us/calendar/" target = "_blank">St. Johns<br>Calendar</a>
-  <a href="https://www-pvhs.stjohns.k12.fl.us/media/">Media Center</a>
-  <a href="test">test</a>
+  <a href="https://www-pvhs.stjohns.k12.fl.us/media/" target = "_blank">Media Center</a>
+  <a href="/giveyouup.mp4">Completely <br />legitimate <br />hyperlink</a>
 </div>
 
     <br><br><br><br><br><br>
@@ -179,7 +208,47 @@
     </div>
     <div id="weeklyupdate">
       <h3 id="weekly">Weekly Update</h3>
-      <!-- Here will be our weekly update, dont work on until final week -->
+      <h4>AP Exam Reminder</h4>
+      <p>April 24, 2022</p>
+      <div id = "apannouncement">
+      <p><strong>The Advanced Placement (AP) Exams</strong> for 2022 will be administered from May 2-13 at Ponte Vedra High School. Please read through this message to find out all of the important information that Parents and Students need to know for this important time of the year.</p>
+
+      <p>Exam Locations:</p>
+      <ul>
+        <li>All AP Exams will be held in the Gym.</li>
+        <li>Students with Accommodations (Time+ 50%) will test in the Auditorium.</li>
+      </ul>
+
+      <p><strong>REVIEW THE EXAM SCHEDULE CAREFULLY</strong>. Some accommodated test takers may have two exams scheduled for one day, which can be challenging. If you DO NOT wish to use your accommodation for any of your exams, please send a message to Jennifer Lee in email or <a href="https://stjohnsschools.schoology.com/" target="_blank" style="color:black;">Schoology</a> message.</p>
+      <div class="dropdown">
+        <img src="/ap-schedule.png" alt="AP Schedule 1" width="100" height="50">
+       <div class="dropdown-content">
+        <img src="/ap-schedule.png" alt="AP SChedule 1" width="800" height="650">
+        <div class="desc">Week 1</div>
+       </div>
+      </div>
+        <div class="dropdown">
+          <img src="/ap-schedule2.png" alt="AP Schedule 2" width="100" height="50">
+         <div class="dropdown-content">
+          <img src="/ap-schedule2.png" alt="AP Schedule 2" width="800" height="650">
+          <div class="desc">Week 2</div>
+         </div>
+      </div>
+      <!-- Here will be the collapsible AP schedules -->
+      <p>Test Day Reminders:</p>
+      <ul>
+        <li>Arrive <strong>15 minutes</strong> prior to exam time for each session. Exams will begin <strong>ON TIME</strong>.</li>
+        <li>Morning exams start at <strong>8:00 AM</strong>. If you usually take the bus to school you will need to arrange for another way to get to school on time for the exam.</li>
+        <li><strong>Late students</strong> will not be permitted to test.</li>
+        <li>Bring <strong>No. 2 pencils</strong> and <strong>black</strong> or <strong>blue</strong> ink pens.</li>
+        <li>Bring appropriate calculators. There will not be extra calculators.</li>
+        <li>Snacks and bottled water are permitted.</li>
+        <li>Belongings will be placed against the walls inside the gym or auditorium.</li>
+        <li>Phones should be <strong>TURNED OFF</strong> and kept inside backpacks.</li>
+        <li>Assigned seats will be posted. Find your seat promptly.</li>
+      </ul><br>
+      <p>Good Luck!</p>
+      </div>
     </div>
     <div id="announcecontent">
       <h3 id="announce"><span><center>Registration for 2022-2023</center></span></h3>
@@ -238,6 +307,7 @@
     </div>
     </div>
     
+    
     <div class="parallax" style="background-color:rgb(222,222,222);">
     <div id="hs101border">
     <div id="hs101">
@@ -250,6 +320,7 @@
       <p>If you were unable to attend, there is more information available here.</p>
 
       
+    </div>
     </div>
     </div>
 
@@ -279,7 +350,8 @@
           <span style = "font-size:.8em;">Ponte Vedra, FL 32081</span><br>
           <span style = "font-size:.8em;">Main: (904) 547-7350</span><br>
           <span style = "font-size:.8em;">Fax: (904) 547 7355</span><br>
-          <a href="https://goo.gl/maps/XTZNZuMXqhJCiwR97" style="padding-left:100px;">View Map</a>
+          <a href="https://goo.gl/maps/XTZNZuMXqhJCiwR97" style="padding-left:100px;" target="_blank">View Map</a><br>
+          <span style = "font-size:.8em;">&copy; 2022 JustAGlitch Web Development Group</span>
         </td>
       </tr>
       </table>

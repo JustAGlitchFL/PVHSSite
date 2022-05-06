@@ -126,13 +126,12 @@ body {
   padding: 0px;
   position:relative;
   height:250vh;
-  top:130px;
   width:75%;
   margin:auto;
   margin-top:50px;
   margin-bottom:200px;
 /*   border:solid grey 5px; */
-  border-radius: 20px;
+  border-radius: 40px;
   background-color:white;
 
 }
@@ -144,7 +143,7 @@ body {
   padding-top:50px;
   display:inline-block;
   float:left;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 .sidemain {
@@ -178,9 +177,13 @@ body {
   color:lightblue;
 }
 
-#helpfullinks a:hover {
+#helpfullinks a:visited a:visited:hover {
   color:deepskyblue;
   text-decoration:underline;
+}
+
+#helpfullinks a:visited {
+  color:lightblue;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

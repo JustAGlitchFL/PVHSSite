@@ -1,5 +1,19 @@
+<!-- Please run in separate tab, instead of the replit browser.  Tall aspect ratios may break some elements. -->
+
+<!-- This software is under the MIT license, and anyone is free to fork or copy any part of this project.  License text below.
+
+Copyright 2022 JustAGlitch Web Development Group
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-->
+
 <!DOCTYPE html>
-<html>
+<html lang>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -9,10 +23,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/x-icon" href="https://www.stjohns.k12.fl.us/cr/wp-content/uploads/sites/35/2015/02/2-300x277.png" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      function checkDay() {
+  const today = new Date();
+  let d = today.getDay();
+  setTimeout(checkDay, 1000);
+
+  if (d==3) {      
+document.getElementById("earlyRelease").style.visibility = "visible";
+document.getElementById("earlyRelease").style.height = "80px";
+document.getElementById("earlyRelease").style.padding = "5px 0px 15px 0px";
+  }
+}
+    </script>
     <script src="script.js"></script>
 
+
+    
     <style>
       body {
         color:whitesmoke;
@@ -36,7 +65,7 @@
   }
     </style>
   </head>
-  <body>
+  <body onload="checkDay()">
 <!--     page info not shown -->
 <!--     top navigation and title bar-->
      <div class="topnav" id = "topnav" style="white-space:nowrap;">
@@ -53,18 +82,59 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://homeaccess.stjohns.k12.fl.us/HomeAccess/Account/LogOn?ReturnUrl=%2fhomeaccess">Home Access<br>Center</a>
+  <a href="https://homeaccess.stjohns.k12.fl.us/HomeAccess/Account/LogOn?ReturnUrl=%2fhomeaccess" target = "_blank">Home Access<br>Center</a>
   <a href="https://stjohnsschools.schoology.com/" target="_blank">Schoology for<br>Students</a>
   <a href="https://www.stjohns.k12.fl.us/calendar/" target = "_blank">St. Johns<br>Calendar</a>
-  <a href="https://www-pvhs.stjohns.k12.fl.us/media/">Media Center</a>
-  <a href="test">test</a>
+  <a href="https://www-pvhs.stjohns.k12.fl.us/media/" target = "_blank">Media Center</a>
+  <a href="/giveyouup.mp4">Completely <br />legitimate <br />hyperlink</a>
 </div>
 
+  <div id = "earlyRelease" style = "background-color:darkblue; font-size:30px; text-align:center; margin-top:130px; height:0px; padding-top:0px; visibility:hidden;"><h3>Its Early Release! School Ends At 2:50 Today</h3></div>
+    
 <!-- main content -->
 <div id="main">
       <aside id="upcoming"></aside>
   <div class="maincontent">
-    
+
+    <div id="daysleft" class="contentbox" >
+    <center>
+    <br>
+    <h1>Days of school remaining</h1>
+      <span style="font-size:20pt;">
+  <!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("June 2, 2022 15:50:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+      </span>
+    </div></center>
     <div id="schoolaccess" class = "contentbox">
     <h1>School Access</h1>
 
@@ -77,75 +147,75 @@
     <p>FortifyFL is a website and app developed at the direction of the Florida Legislature. Any student, educator, parent or member of the public can report school safety concerns directly to law enforcement and school administrators anonymously and easily through the FortifyFL app or getfortifyfl.com.</p>
     </div>
 
-    <div id = "helpfullinks" class = "contentbox">
+    <div id = "helpfullinks" class = "contentbox" style="color: ghostwhite;">
       <h1>Helpful Links</h1>
         <table>
           <tr>
             <td>
               <h3>Attendance</h3>
               <ul>
-                <li><a>Attendance Policy</a></li>
-                <li><a>PVHS Absentee Form</a></li>
-                <li><a>Pre-Approved Absence Form</a></li>
-                <li><a>PVHS Tardy Form</a></li>
-                <li><a>PVHS Early Dismissal Form</a></li>
+                <li><a href="/giveyouup.mp4">Attendance Policy</a></li>
+                <li><a href="/giveyouup.mp4">PVHS Absentee Form</a></li>
+                <li><a href="/giveyouup.mp4">Pre-Approved Absence Form</a></li>
+                <li><a href="/giveyouup.mp4">PVHS Tardy Form</a></li>
+                <li><a href="/giveyouup.mp4">PVHS Early Dismissal Form</a></li>
               </ul>
               <h3>Quick Links</h3>
               <ul>
-                <li><a>Requesting Transcripts</a></li>
-                <li><a>MTSS/RtI Information</a></li>
-                <li><a>Free and Reduced Meals Information</a></li>
-                <li><a>Health Clinic</a></li>
-                <li><a>Craig Speziale Memorial Scholarship Fund</a></li>
-                <li><a>All Visitors</li>
-                <li><a>AUP Form</a></li>
-                <li><a>Year-at-a Glance Pacing Guides</a></li>
-                <li><a>Parent Resource Guide</a></li>
-                <li><a>PVHS School Profile 2019-2020</a></li>
-                <li><a>School Improvement Plan</a></li>
-                <li><a>SJCSD ESE Webpage</a></li>
-                <li><a>Foundation for Excellence in Education</a></li>
-                <li><a>Driver Education</a></li>
-                <li><a>Volunteer Application</a></li>
-                <li><a>Facilities Request</a></li>
-                <li><a>PV Education Foundation</a></li>
-                <li><a>SAC</li>
+                <li><a href="/giveyouup.mp4">Requesting Transcripts</a></li>
+                <li><a href="/giveyouup.mp4">MTSS/RtI Information</a></li>
+                <li><a href="/giveyouup.mp4">Free and Reduced Meals Information</a></li>
+                <li><a href="/giveyouup.mp4">Health Clinic</a></li>
+                <li><a href="/giveyouup.mp4">Craig Speziale Memorial Scholarship Fund</a></li>
+                <li><a href="/giveyouup.mp4">All Visitors</li>
+                <li><a href="/giveyouup.mp4">AUP Form</a></li>
+                <li><a href="/giveyouup.mp4">Year-at-a Glance Pacing Guides</a></li>
+                <li><a href="/giveyouup.mp4"a>Parent Resource Guide</a></li>
+                <li><a href="/giveyouup.mp4">PVHS School Profile 2019-2020</a></li>
+                <li><a href="/giveyouup.mp4">School Improvement Plan</a></li>
+                <li><a href="/giveyouup.mp4">SJCSD ESE Webpage</a></li>
+                <li><a href="/giveyouup.mp4">Foundation for Excellence in Education</a></li>
+                <li><a href="/giveyouup.mp4">Driver Education</a></li>
+                <li><a href="/giveyouup.mp4">Volunteer Application</a></li>
+                <li><a href="/giveyouup.mp4">Facilities Request</a></li>
+                <li><a href="/giveyouup.mp4">PV Education Foundation</a></li>
+                <li><a href="/giveyouup.mp4">SAC</li>
               </ul>
             </td>
             
             <td>
               <h3>Academies</h3>
               <ul>
-                <li><a>Academy Programs</a></li>
-                <li><a>Registration</a></li>
+                <li><a href="/giveyouup.mp4">Academy Programs</a></li>
+                <li><a href="/giveyouup.mp4">Registration</a></li>
               </ul>
               <h3>Registration</h3>
               <ul>
-                <li><a>2021-2022 Course Catalog</a></li>
-                <li><a>PVHS Course Registration Slideshow</a></li>
-                <li><a>High School 101</a></li>
+                <li><a href="/giveyouup.mp4">2021-2022 Course Catalog</a></li>
+                <li><a href="/giveyouup.mp4">PVHS Course Registration Slideshow</a></li>
+                <li><a href="/giveyouup.mp4">High School 101</a></li>
               </ul>
               <h3>Calendars</h3>
               <ul>
-                <li><a>SJCSD Master Calendar</a></li>
-                <li><a>School Calendar</a></li>
-                <li><a>Athletics Calendar</a></li>
+                <li><a href="/giveyouup.mp4">SJCSD Master Calendar</a></li>
+                <li><a href="/giveyouup.mp4">School Calendar</a></li>
+                <li><a href="/giveyouup.mp4">Athletics Calendar</a></li>
               </ul>
             </td>
             
             <td>
               <h3>For Students</h3>
               <ul>
-                <li><a>2021 Summer Reading</a></li>
-                <li><a>PVHS Tiburon (newspaper)</a></li>
-                <li><a>Cafeteria</a></li>
-                <li><a>PVHS PARKING 2021-2022</a></li>
-                <li><a>Senior Parking Registration 2021-2022</a></li>
-                <li><a>Junior Parking Registration 2021-2022</a></li>
-                <li><a>Community Service</a></li>
-                <li><a>Naviance</a></li>
-                <li><a>National Honor Society at PVHS</a></li>
-                <li><a>Link Crew</a></li>
+                <li><a href="/giveyouup.mp4">2021 Summer Reading</a></li>
+                <li><a href="/giveyouup.mp4">PVHS Tiburon (newspaper)</a></li>
+                <li><a href="/giveyouup.mp4">Cafeteria</a></li>
+                <li><a href="/giveyouup.mp4">PVHS PARKING 2021-2022</a></li>
+                <li><a href="/giveyouup.mp4">Senior Parking Registration 2021-2022</a></li>
+                <li><a href="/giveyouup.mp4">Junior Parking Registration 2021-2022</a></li>
+                <li><a href="/giveyouup.mp4">Community Service</a></li>
+                <li><a href="/giveyouup.mp4">Naviance</a></li>
+                <li><a href="/giveyouup.mp4">National Honor Society at PVHS</a></li>
+                <li><a href="/giveyouup.mp4">Link Crew</a></li>
               </ul>
             </td>
           </tr>
@@ -155,20 +225,19 @@
   </div>
   
   <div class = "sidemain">
+    <hr>
     <h2>Announcements</h2>
+    <hr>
     <a><h4>Sharks take 1st in Chinese Comp.<br>Sunday, April 24</h4></a>
     <a><h4>Capstone Project<br>TBA</h4></a>
     <a href="/subpages/PVHS-announcements.html#announce" ><h4>Registration for 2022-2023<br>March 4, 2022</h4></a>
-    <a><h4></h4></a>
-    <a><h4></h4></a>
-    <a><h4></h4></a>
+    <hr>
     <h2>Upcoming Events</h2>
-    <a><h4>AP Human Geography Exam<br>Thursday, May 5</h4></a>
-    <a><h4>End Of The World<br>Friday, May 6</h4></a>
+    <hr>
+    <a><h4><del>Star Wars Day<br>Wednesday, May 4</del></h4></a>
+    <a><h4><del>AP Human Geography Exam<br>Thursday, May 5</del></h4></a>
     <a><h4>Summer Vacation<br>June, 3</h4></a>
-    <a><h4></h4></a>
-    <a><h4></h4></a>
-    <a><h4></h4></a>
+    <a><h4>Rick Astley's Birthday<br>February 6, 2023</h4></a>
   </div>
 </div>
 <!--      footer -->
@@ -186,17 +255,15 @@
           <span style = "font-size:.8em;">Ponte Vedra, FL 32081</span><br>
           <span style = "font-size:.8em;">Main: (904) 547-7350</span><br>
           <span style = "font-size:.8em;">Fax: (904) 547 7355</span><br>
-          <a href="https://goo.gl/maps/XTZNZuMXqhJCiwR97" style="padding-left:100px;">View Map</a>
+          <a href="https://goo.gl/maps/XTZNZuMXqhJCiwR97" style="padding-left:100px;" target='_blank'>View Map</a><br>
+          <span style = "font-size:.8em;">&copy; 2022 JustAGlitch Web Development Group</span>
         </td>
       </tr>
       </table>
       
     </div>
 </div>
-    
-
-<!--     popout  -->
-<!--     content wrapper -->
+  
 
   </body>
 </html>
