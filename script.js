@@ -29,11 +29,13 @@
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   /* document.getElementById("main").style.marginLeft = "0"; */
+  document.getElementById("mySidenav").style.borderRightWidth = "0px";
 }
       
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "260px";
   /* document.getElementById("main").style.marginLeft = "250px"; */
+  document.getElementById("mySidenav").style.borderRightWidth = "15px";
 }
 
 $(function sidenav(){

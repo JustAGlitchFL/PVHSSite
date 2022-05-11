@@ -89,11 +89,12 @@ body {
   z-index: 101; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: #111; /*black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   white-space: nowrap; /* prevent text from wrapping */
+  border-right: 0px solid gray;
 }
 
 /* The navigation menu links */
@@ -101,9 +102,18 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: rgb(150, 193, 212);
   display: block;
   transition: 0.3s;
+  /*border-top:1px solid gray;*/
+}
+
+.sidenav a:nth-child(even) {
+  background-color:rgb(46, 55, 59);
+}
+
+.sidenav a:nth-child(odd) {
+  background-color: #111;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -131,7 +141,7 @@ body {
   margin-top:50px;
   margin-bottom:200px;
 /*   border:solid grey 5px; */
-  border-radius: 40px;
+  border-radius: 12px;
   background-color:white;
 
 }
@@ -143,7 +153,7 @@ body {
   padding-top:50px;
   display:inline-block;
   float:left;
-  border-radius: 40px;
+  border-radius: 12px;
 }
 
 .sidemain {
@@ -177,9 +187,13 @@ body {
   color:lightblue;
 }
 
-#helpfullinks a:visited a:visited:hover {
+#helpfullinks a:visited:hover {
   color:deepskyblue;
   text-decoration:underline;
+}
+
+#helpfullinks a:link {
+  color:lightblue;
 }
 
 #helpfullinks a:visited {
